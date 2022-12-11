@@ -9,7 +9,7 @@
     </head>
     <body>
         <header>
-            <h1 class="text-6xl text-center my-14">
+            <h1 class="lg:text-6xl text-3xl text-center my-14">
                 Let's get some
                 <span class="font-semibold text-indigo-600">Money!!!!</span>
             </h1>
@@ -18,7 +18,9 @@
         <main class="w-3/4 mx-auto">
             <!-- Balance and transection  -->
             <section class="mt-8">
-                <div class="grid grid-cols-3 gap-4 text-white">
+                <div
+                    class="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-4 text-white"
+                >
                     <div class="bg-slate-700 p-8 rounded">
                         <h3 class="text-3xl">Deposit</h3>
                         <h2 class="text-5xl">
@@ -41,9 +43,10 @@
                     <div></div>
                 </div>
             </section>
+            <hr class="block lg:hidden border-orange-500" />
             <section class="my-6">
                 <!-- Deposit and Withdraw -->
-                <div class="grid grid-cols-2 gap-4">
+                <div class="grid lg:grid-cols-2 grid-cols-1 gap-4">
                     <div class="bg-red-100 p-8 rounded">
                         <h3 class="text-3xl text-center">Please Deposit</h3>
                         <div>
@@ -62,7 +65,9 @@
                         </div>
                     </div>
                     <div class="bg-teal-500 p-8 rounded">
-                        <h3 class="text-3xl text-center text-white">Please Withdraw</h3>
+                        <h3 class="text-3xl text-center text-white">
+                            Please Withdraw
+                        </h3>
                         <div>
                             <input
                                 id="withdraw-input"
